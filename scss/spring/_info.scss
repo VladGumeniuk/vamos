@@ -1,11 +1,4 @@
 .info {
-  &__title {
-    margin-bottom: 50px;
-    @media (max-width: 768px) {
-      margin-bottom: 25px;
-    }
-  }
-
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

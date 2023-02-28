@@ -1,12 +1,6 @@
-.days__title {
-  margin-bottom: 50px;
-  @media (max-width: 768px) {
-    margin-bottom: 25px;
-  }
-}
 .days__list {
   margin: 0 auto;
-  max-width: 905px;
+  max-width: 915px;
   max-height: 550px;
   overflow-y: auto;
   @media (max-width: 768px) {
@@ -33,6 +27,7 @@
   }
 }
 .days__width {
+  max-width: 100%;
   @media (max-width: 926px) {
     max-width: 107px;
     span {

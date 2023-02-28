@@ -1,11 +1,7 @@
 .active {
-  &__title {
-    margin-bottom: 50px;
-  }
-
   &__list {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 150px);
     grid-template-rows: repeat(3, 150px);
     gap: 30px;
     padding-bottom: 10px;
@@ -33,8 +29,8 @@
   &__text {
     padding: 7px;
     font-weight: 500;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 24px;
     text-align: center;
     color: $colorText;
     @media (max-width: 768px) {

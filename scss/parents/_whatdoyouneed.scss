@@ -1,0 +1,30 @@
+.whatdoyouneed {
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #fefefe;
+    span {
+      padding: 0 8px;
+      background: #04b4ff;
+      border-radius: 10px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 auto 20px;
+    max-width: 340px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 24px;
+
+    color: $colorText;
+  }
+}

@@ -1,8 +1,4 @@
 .team {
-  &__title {
-    margin-bottom: 50px;
-  }
-
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

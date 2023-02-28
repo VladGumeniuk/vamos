@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VAMOS | Весна</title>
+    <link rel="stylesheet" href="./../css/style.css" />
+  </head>
+
+  <body class="bg">
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <a href="./../index.html" class="header__logo">
+            <img src="./../images/header/logo.png" alt="" />
+          </a>
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li><a class="header__link" href="#">Про табір</a></li>
+              <li><a class="header__link" href="#">Зміни</a></li>
+              <li>
+                <a class="header__link" href="./../html/parents.html"
+                  >Для батьків</a
+                >
+              </li>
+            </ul>
+            <ul class="header__phone">
+              <li>
+                <a href="tel:+38 098 057 4922" class="header__link icon__phone"
+                  >+38 098 057 4922</a
+                >
+              </li>
+              <li>
+                <a href="#popup" class="header__link header__btn">Замовити</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="bannerparents">
+      <h1 class="bannerparents__title">ІНФОРМАЦІЯ ДЛЯ БАТЬКІВ</h1>
+    </section>
+    <section class="section">
+      <!-- whatdoyouneed -->
+      <div class="containrt__two">
+        <div class="whatdoyouneed__title">
+          <span>Які потрібні документи?</span>
+        </div>
+        <ul class="whatdoyouneed__list">
+          <li class="whatdoyouneed__text">- Договір з батьками</li>
+          <li class="whatdoyouneed__text">– Заява від батьків</li>
+          <li class="whatdoyouneed__text">– Анкета харчування дитини</li>
+          <li class="whatdoyouneed__text">– Медична анкета дитини</li>
+          <li class="whatdoyouneed__text">– Копія свідоцтва про народження</li>
+        </ul>
+        <div class="whatdoyouneed__title"><span>А також:</span></div>
+      </div>
+    </section>
+    <footer class="footer"></footer>
+    <div id="popup" class="popup">
+      <a href="##" class="popup__area"></a>
+      <div class="popup__wrapper">
+        <div class="popup__content">
+          <a class="popup__close" href="#">X</a>
+          <div class="popup__image">
+            <img src="./../images/anketa/baby21.png" alt="" />
+          </div>
+          <form id="form" class="anketa" action="#">
+            <div class="anketa__title">Залишити заявку</div>
+            <ul class="anketa__list">
+              <li>
+                <label for="formName">Ім'я*</label>
+                <input
+                  id="formName"
+                  type="text"
+                  name="name"
+                  class="anketa__input"
+                />
+              </li>
+              <li>
+                <label for="formPhone">Номер телефону*</label>
+                <input
+                  id="formPhone"
+                  type="tel"
+                  name="phone"
+                  class="anketa__input"
+                />
+              </li>
+              <li>
+                <label for="formAge">Вік дитини</label>
+                <input
+                  id="formAge"
+                  type="tel"
+                  name="age"
+                  class="anketa__input"
+                />
+              </li>
+            </ul>
+            <button type="submit" class="anketa__btn">Забронювати</button>
+          </form>
+          <div class="popup__image">
+            <img src="./../images/anketa/baby11.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./../js/burger.js"></script>
+  </body>
+</html>
