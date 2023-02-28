@@ -753,7 +753,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 50px;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 .terms__image {
   display: flex;
@@ -896,7 +896,8 @@ body {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 150px);
   gap: 30px;
-  overflow-x: scroll;
+  padding-bottom: 10px;
+  overflow-x: auto;
 }
 @media (max-width: 768px) {
   .active__list {
@@ -923,6 +924,12 @@ body {
   line-height: 26px;
   text-align: center;
   color: #29353e;
+}
+@media (max-width: 768px) {
+  .active__text {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
 
 .days__title {
