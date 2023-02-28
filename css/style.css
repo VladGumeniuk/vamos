@@ -674,22 +674,6 @@ body {
     line-height: 40px;
   }
 }
-.bannerspring__oldprice {
-  padding: 0 62px;
-  margin-bottom: 38px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: #a6a0a0;
-  text-decoration: line-through;
-}
-@media (max-width: 768px) {
-  .bannerspring__oldprice {
-    margin-bottom: 25px;
-    font-size: 20px;
-    line-height: 25px;
-  }
-}
 .bannerspring__btn {
   display: grid;
   grid-template-columns: repeat(2, 270px);
