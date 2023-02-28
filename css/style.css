@@ -122,6 +122,7 @@ body {
 }
 
 .title {
+  margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
   font-size: 55px;
@@ -130,6 +131,7 @@ body {
 }
 @media (max-width: 768px) {
   .title {
+    margin-bottom: 25px;
     font-size: 32px;
     line-height: 42px;
   }
@@ -782,9 +784,6 @@ body {
   }
 }
 
-.team__title {
-  margin-bottom: 50px;
-}
 .team__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -841,14 +840,6 @@ body {
   color: #29353e;
 }
 
-.info__title {
-  margin-bottom: 50px;
-}
-@media (max-width: 768px) {
-  .info__title {
-    margin-bottom: 25px;
-  }
-}
 .info__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -892,9 +883,6 @@ body {
   color: #29353e;
 }
 
-.active__title {
-  margin-bottom: 50px;
-}
 .active__list {
   display: grid;
   grid-template-columns: repeat(6, 150px);
@@ -933,15 +921,6 @@ body {
   .active__text {
     font-size: 18px;
     line-height: 20px;
-  }
-}
-
-.days__title {
-  margin-bottom: 50px;
-}
-@media (max-width: 768px) {
-  .days__title {
-    margin-bottom: 25px;
   }
 }
 
@@ -1069,6 +1048,53 @@ body {
     font-size: 14px;
     line-height: 24px;
   }
+}
+
+.parents__list {
+  padding-bottom: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 264px);
+  gap: 20px;
+}
+@media (max-width: 1100px) {
+  .parents__list {
+    overflow-x: scroll;
+    gap: 15px;
+  }
+}
+.parents__cards {
+  padding: 30px 12px;
+  height: 470px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.parents__image {
+  display: flex;
+  justify-content: center;
+}
+.parents__image img {
+  max-width: 100%;
+}
+.parents__icon {
+  margin: 10px auto;
+  width: 120px;
+  height: 20px;
+  background: url(./../images/icons/good.png);
+}
+.parents__name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #29353e;
+}
+.parents__text {
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #29353e;
 }
 
 .popup {
