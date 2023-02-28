@@ -1,0 +1,109 @@
+html,
+body {
+  height: 100%;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+}
+
+// .wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 100%;
+// }
+
+// .main {
+//   flex: 1 0 auto;
+// }
+// .footer {
+//   flex: 0 0 auto;
+// }
+
+.container {
+  padding: 0 100px;
+  margin: 0 auto;
+  @media (max-width: 1500px) {
+    padding: 0 50px;
+  }
+  @media (maxwidth: 1200px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 992px) {
+  }
+
+  @media (max-width: 768px) {
+  }
+}
+.container__two {
+  max-width: 1166px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.section {
+  padding: 50px 0;
+  @media (max-width: 768px) {
+    padding: 25px 0;
+  }
+}
+.bg__img {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/banner/bg.jpg) center/cover no-repeat fixed;
+  @media (max-width: 768px) {
+    overflow: hidden;
+  }
+}
+.bg {
+  background: #e6f2f2;
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 64px;
+  color: $colorText;
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+// SCROLL ANIM
+
+.scroll {
+  display: none;
+}
+@media (max-width: 768px) {
+  .scroll {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  .scroll__icon {
+    position: relative;
+    right: 0;
+    animation: arrow-right 0.4s linear infinite alternate;
+  }
+  .scroll__icon.rotate {
+    transform: rotate(180deg);
+    position: relative;
+    left: 0;
+    animation: arrow 0.4s linear infinite alternate;
+  }
+  @keyframes arrow-right {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 20px;
+    }
+  }
+  @keyframes arrow {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 20px;
+    }
+  }
+}

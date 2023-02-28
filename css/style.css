@@ -753,7 +753,11 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 50px;
-  overflow-x: auto;
+}
+@media (max-width: 1000px) {
+  .terms__list {
+    overflow-x: scroll;
+  }
 }
 .terms__image {
   display: flex;
@@ -897,10 +901,10 @@ body {
   grid-template-rows: repeat(3, 150px);
   gap: 30px;
   padding-bottom: 10px;
-  overflow-x: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .active__list {
+    overflow-x: scroll;
     gap: 15px;
   }
 }
