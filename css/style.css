@@ -980,7 +980,7 @@ body {
 }
 
 .days__width {
-  max-width: 253px;
+  max-width: 100%;
 }
 @media (max-width: 926px) {
   .days__width {
