@@ -897,7 +897,7 @@ body {
 }
 .active__list {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 150px);
   grid-template-rows: repeat(3, 150px);
   gap: 30px;
   padding-bottom: 10px;
@@ -979,6 +979,9 @@ body {
   }
 }
 
+.days__width {
+  max-width: 253px;
+}
 @media (max-width: 926px) {
   .days__width {
     max-width: 107px;
