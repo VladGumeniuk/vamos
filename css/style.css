@@ -124,7 +124,7 @@ body {
 .bannerparents {
   margin-top: -80px;
   padding: 175px 0 225px 0;
-  background: url(../images/parents/fon.jpg) center/cover;
+  background: url(./../images/parents/fon.jpg) center/cover;
 }
 @media (max-width: 768px) {
   .bannerparents {
