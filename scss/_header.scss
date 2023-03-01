@@ -44,7 +44,7 @@
   &__link {
     font-weight: 400;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 20px;
     color: #ffffff;
     fill: #fff;
     transition: all 0.3s ease;
@@ -54,7 +54,6 @@
     }
     @media (max-width: 1500px) {
       font-size: 18px;
-      line-height: 20px;
     }
     @media (max-width: 768px) {
       font-size: 20px;

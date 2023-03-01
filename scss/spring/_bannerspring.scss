@@ -42,12 +42,12 @@
       margin-right: 20px;
       width: 42px;
       height: 42px;
-      background: url(../images/icons/Cherry.png) center no-repeat;
+      background: url(../images/icons/cherry.png) center no-repeat;
       @media (max-width: 768px) {
         margin-right: 5px;
         width: 30px;
         height: 30px;
-        background: url(../images/icons/Cherry.png) center/20px no-repeat;
+        background: url(../images/icons/cherry.png) center/20px no-repeat;
       }
     }
   }
@@ -81,10 +81,11 @@
 
   &__text {
     display: flex;
+    justify-content: center;
     margin-bottom: 10px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    line-height: 30px;
+    @include adaptiv-value("font-size", 36, 20);
     &::before {
       content: "";
       margin-right: 20px;
@@ -98,39 +99,17 @@
         height: 30px;
       }
     }
-    @media (max-width: 768px) {
-      justify-content: center;
-      font-size: 20px;
-      line-height: 30px;
-    }
   }
 
   &__price {
     padding: 0 62px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     font-weight: 700;
+    text-align: center;
     font-size: 64px;
-    line-height: 75px;
+    line-height: 50px;
     color: #00c6f7;
-    @media (max-width: 768px) {
-      font-size: 34px;
-      line-height: 40px;
-    }
-  }
-
-  &__oldprice {
-    padding: 0 62px;
-    margin-bottom: 38px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    color: #a6a0a0;
-    text-decoration: line-through;
-    @media (max-width: 768px) {
-      margin-bottom: 25px;
-      font-size: 20px;
-      line-height: 25px;
-    }
+    @include adaptiv-value("font-size", 64, 26);
   }
 
   &__btn {
