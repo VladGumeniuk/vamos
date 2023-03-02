@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="./../css/style.css" />
   </head>
 
-  <body class="bg">
+  <body>
     <header class="header">
-      <div class="container">
+      <div class="container__header">
         <div class="header__body">
           <a href="./../index.html" class="header__logo">
             <img src="./../images/header/logo.png" alt="" />
@@ -19,9 +19,9 @@
           </div>
           <nav class="header__menu">
             <ul class="header__list">
-              <li><a class="header__link" href="#">Про табір</a></li>
-              <li><a class="header__link" href="#">Зміни</a></li>
-              <li><a class="header__link" href="#">Для батьків</a></li>
+              <li><a class="header__link" href="#tabir">Про табір</a></li>
+              <li><a class="header__link" href="#">Про нас</a></li>
+              <li><a class="header__link" href="./../html/parents.html">Для батьків</a></li>
             </ul>
             <ul class="header__phone">
               <li>
@@ -37,19 +37,16 @@
         </div>
       </div>
     </header>
-    <div class="wrapper">
-      <main class="main">
-        <section class="bannerspring">
-          <div class="container">
+    <section class="bannerspring">
+          <div class="container__header">
             <div class="bannerspring__body">
               <div class="bannerspring__content">
                 <div class="bannerspring__title">
                   Зміна <span>«BABY BOSS»</span>
                 </div>
                 <div class="bannerspring__data">27.03-01.04</div>
-                <div class="bannerspring__text">Раннє бронювання</div>
-                <div class="bannerspring__price">7000 ₴</div>
-                <div class="bannerspring__oldprice">8500 ₴</div>
+                <div class="bannerspring__text">Ціна</div>
+                <div class="bannerspring__price">8000 ₴</div>
                 <ul class="bannerspring__btn">
                   <li>
                     <a class="bannerspring__link link__color" href="#">
@@ -78,9 +75,9 @@
               </div>
             </div>
           </div>
-        </section>
-        <section class="section terms">   <!-- TERMS -->
-          <div class="container__two">
+    </section>
+    <section class="section terms">   <!-- TERMS -->
+          <div class="container">
             <div class="scroll">
               <img
                 class="scroll__icon"
@@ -132,10 +129,10 @@
               </li>
             </ul>
           </div>
-        </section>
-        <section class="section">   <!-- TEAM -->
-          <div class="container__two">
-            <h3 class="team__title title">НАША КОМАНДА</h3>
+    </section>
+    <section class="section">   <!-- TEAM -->
+          <div class="container">
+            <h3 class="title">НАША КОМАНДА</h3>
             <ul class="team__list">
               <li class="team__cards">
                 <div class="team__image">
@@ -180,10 +177,10 @@
               </li>
             </ul>
           </div>
-        </section>
-        <section class="section">   <!-- INFO -->
-          <div class="container__two">
-            <h3 class="info__title title">УМОВИ ПЕРЕБУВАННЯ</h3>
+    </section>
+    <section id="tabir" class="section">   <!-- INFO -->
+          <div class="container">
+            <h3 class="title">УМОВИ ПЕРЕБУВАННЯ</h3>
             <ul class="info__list">
               <li class="info__cards">
                 <div class="info__subtitle">Проживання</div>
@@ -224,10 +221,22 @@
               </li>
             </ul>
           </div>
-        </section>
-         <section class="section"> <!-- ACTIVE -->
-          <div class="container__two">
-            <h3 class="active__title title">АКТИВНИЙ ВІДПОЧИНОК</h3>
+    </section>
+    <section class="section"> <!-- ACTIVE -->
+          <div class="container">
+            <h3 class="title">АКТИВНИЙ ВІДПОЧИНОК</h3>
+            <div class="scroll">
+              <img
+                class="scroll__icon"
+                src="./../images/arrow-left.png"
+                alt=""
+              />
+              <img
+                class="scroll__icon rotate"
+                src="./../images/arrow-left.png"
+                alt=""
+              />
+            </div>
             <ul class="active__list">
               <li class="active__cards">
                 <div class="active__image">
@@ -327,28 +336,28 @@
               </li>
               <li class="active__cards">
                 <div class="active__image">
-                  <img src="./../images/icons/Pistol.png" alt="">
+                  <img src="./../images/icons/ferriswheel.png" alt="">
                 </div>
-                <div class="active__text">ПЕЙНТБОЛ (влітку)</div>
+                <div class="active__text">Атракціон емоцій</div>
               </li>
               <li class="active__cards">
                 <div class="active__image">
-                  <img src="./../images/icons/Basketball.png" alt="">
+                  <img src="./../images/icons/Pistol.png" alt="">
                 </div>
                 <div class="active__text">ПЕЙНТБОЛ (влітку)</div>
               </li>
             </ul>
           </div>
-        </section>
-        <section class="section">   <!-- DAYS -->
-          <div class="container__two">
-            <h3 class="days__title title">НАШ РОЗПОРЯДОК ДНЯ</h3>
+    </section>
+    <section class="section">   <!-- DAYS -->
+          <div class="container">
+            <h3 class="title">НАШ РОЗПОРЯДОК ДНЯ</h3>
             <ul class="days__list">
               <li class="days__cards">
                 <div class="days__time">8:30</div>
                 <div class="days__line"></div>
                 <div class="days__positions">
-                  <img class="days__icon" src="./../images/icons/Sun.png" alt="">
+                  <img class="days__icon" src="./../images/icons/sun.png" alt="">
                   <div class="days__text">Добрий ранок</div>
                 </div>
               </li>
@@ -463,10 +472,50 @@
               </li>
             </ul>
           </div>
-        </section>
-        <section class="section">   <!-- ANKETA -->
-          <div class="container__two flex">
-            <div class="popup__image">
+    </section>
+    <section class="section">   <!-- PARENTS -->
+          <div class="container">
+            <h3 class="title">ВІДГУКИ БАТЬКІВ</h3>
+            <ul class="parents__list">
+              <li class="parents__cards">
+                <div class="parents__image">
+                  <img src="./../images/base/parents01.png" alt="">
+                </div>
+                <div class="parents__icon"></div>
+                <div class="parents__name">Тетяна Павленко</div>
+                <div class="parents__text">Дякую всім організаторам і вожатим Vamos, ви дуже круті!! Моя донька вдруге була з вами і в повному захваті! Окреме спасибі, за відео та фотозвіти до батьківської групи!!</div>
+              </li>
+              <li class="parents__cards">
+                <div class="parents__image">
+                  <img src="./../images/base/parents02.png" alt="">
+                </div>
+                <div class="parents__icon"></div>
+                <div class="parents__name">Михайло Задорожний</div>
+                <div class="parents__text">Круте місце для відпочинку дітей. Класна атмосфера, чудовий персонал. Все на вищому рівні.</div>
+              </li>
+              <li class="parents__cards">
+                <div class="parents__image">
+                  <img src="./../images/base/parents03.png" alt="">
+                </div>
+                <div class="parents__icon"></div>
+                <div class="parents__name">Олександр Петрук</div>
+                <div class="parents__text">Були на зимових канікулах 2022. Спасибі величезне всьому педколективу за вашу працю! Бути другом-це більше ніж добрим педагогом. Дочка вдома вже годину плаче в захлину: "відвезіть мене назад". Сміливо відвеземо її ще неодноразово до Вас. ДЯКУЮ за такі дитячі емоції.</div>
+              </li>
+              <li class="parents__cards">
+                <div class="parents__image">
+                  <img src="./../images/base/parents04.png" alt="">
+                </div>
+                <div class="parents__icon"></div>
+                <div class="parents__name">Сергій Карнатов</div>
+                <div class="parents__text">Найкращий дитячий табір, який тільки можна собі уявити.Харчування: червона риба, бургери та ін. Розваги: ​​сігвей, електросамокати, лазалки, басейн, страйкбол, конкурси ... і все це пишнота в сосновому лісі..</div>
+              </li>
+            </ul>
+            <div class="parents__copy">Усі відгуки взяті з Google Maps</div>
+          </div>
+    </section>
+    <section class="section">   <!-- ANKETA -->
+        <div class="container flex">
+          <div class="popup__image">
             <img src="./../images/anketa/baby21.png" alt="">
           </div>
           <form id="form" class="anketa" action="#">
@@ -490,11 +539,9 @@
           <div class="popup__image">
             <img src="./../images/anketa/baby11.png" alt="">
           </div>
-          </div>
-        </section>
-      </main>
-      <footer class="footer"></footer>
-    </div>
+        </div>
+    </section>
+    <footer class="footer"></footer>
     <div id="popup" class="popup">
       <a href="##" class="popup__area"></a>
       <div class="popup__wrapper">
