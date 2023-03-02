@@ -158,7 +158,7 @@
 }
 .bg__base {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: url(../images/banner/bg.jpg) center/cover no-repeat fixed;
   @media (max-width: 768px) {
     overflow: hidden;

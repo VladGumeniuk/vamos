@@ -23,13 +23,11 @@
     display: flex;
     margin-bottom: 20px;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
+    @include adaptiv-value("font-size", 48, 24);
+    line-height: 1.16;
     @media (max-width: 768px) {
       justify-content: center;
       flex-wrap: wrap;
-      font-size: 24px;
-      line-height: 35px;
     }
     span {
       margin-left: 5px;
@@ -57,8 +55,8 @@
     justify-content: center;
     margin-bottom: 15px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    @include adaptiv-value("font-size", 36, 20);
+    line-height: 1.16;
     text-align: center;
     &::before {
       content: "";
@@ -72,10 +70,6 @@
         width: 30px;
         height: 30px;
       }
-    }
-    @media (max-width: 768px) {
-      font-size: 20px;
-      line-height: 30px;
     }
   }
 
@@ -105,11 +99,10 @@
     padding: 0 62px;
     margin-bottom: 15px;
     font-weight: 700;
-    text-align: center;
-    font-size: 64px;
     line-height: 50px;
     color: #00c6f7;
     @include adaptiv-value("font-size", 64, 26);
+    text-align: center;
   }
 
   &__btn {

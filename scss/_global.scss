@@ -1,11 +1,8 @@
 html,
 body {
+  background-color: #e6f2f2;
   color: #fff;
   font-family: "Rubik", sans-serif;
-}
-
-.bg {
-  background: #e6f2f2;
 }
 
 .container__header {
@@ -15,13 +12,13 @@ body {
     padding: 0 50px;
   }
   @media (maxwidth: 1200px) {
-    padding: 0 $containerPadding + px;
+    padding: 0 20px;
   }
 }
 .container {
   max-width: $containerWidth + px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 $containerPadding + px;
 }
 .section {
   padding: 50px 0;

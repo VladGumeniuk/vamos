@@ -3,8 +3,8 @@
     margin-bottom: 20px;
     text-align: center;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
+    @include adaptiv-value("font-size", 32, 24);
+    line-height: 1.187;
     color: #fefefe;
     span {
       padding: 0 8px;
@@ -18,13 +18,43 @@
     flex-direction: column;
     gap: 5px;
     margin: 0 auto 20px;
-    max-width: 340px;
+    max-width: 370px;
   }
 
   &__text {
-    font-size: 20px;
-    line-height: 24px;
-
+    display: flex;
+    align-items: center;
+    @include adaptiv-value("font-size", 20, 18);
+    line-height: 1.25;
     color: $colorText;
   }
+}
+.list-margin {
+  max-width: 480px;
+  margin: 0 auto;
+}
+.what-box::before {
+  content: "";
+  display: inline-flex;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+.what-box.icon1::before {
+  background: url(../images/icons/lotionbottle.png) center / 25px no-repeat;
+}
+.what-box.icon2::before {
+  background: url(../images/icons/person001.png) center / 25px no-repeat;
+}
+.what-box.icon3::before {
+  background: url(../images/icons/sandal.png) center / 25px no-repeat;
+}
+.what-box.icon4::before {
+  background: url(../images/icons/socks.png) center / 25px no-repeat;
+}
+.what-box.icon5::before {
+  background: url(../images/icons/runningshoe.png) center / 25px no-repeat;
+}
+.what-box.icon6::before {
+  background: url(../images/icons/jeans.png) center / 25px no-repeat;
 }
