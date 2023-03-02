@@ -1,0 +1,61 @@
+.parents {
+  &__list {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 264px);
+    gap: 20px;
+    @media (max-width: 1100px) {
+      overflow-x: scroll;
+      gap: 15px;
+    }
+  }
+
+  &__cards {
+    padding: 30px 12px;
+    height: 470px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__icon {
+    margin: 10px auto;
+    width: 120px;
+    height: 20px;
+    background: url(./../images/icons/good.png);
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: $colorText;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: $colorText;
+  }
+
+  &__copy {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #8d8e8e;
+  }
+}

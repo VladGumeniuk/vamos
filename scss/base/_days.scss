@@ -1,0 +1,115 @@
+.days__list {
+  margin: 0 auto;
+  max-width: 915px;
+  max-height: 550px;
+  overflow-y: auto;
+  @media (max-width: 768px) {
+    max-width: 377px;
+    max-height: 420px;
+  }
+}
+.days__cards {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.days__time {
+  margin-left: auto;
+  font-weight: 500;
+  position: relative;
+  line-height: 32px;
+  color: $colorText;
+  @include adaptiv-value("font-size", 40, 20);
+}
+.days__width {
+  max-width: 100%;
+  @media (max-width: 926px) {
+    max-width: 100px;
+    span {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    max-width: 75px;
+  }
+  @media (max-width: 400px) {
+    max-width: 55px;
+  }
+}
+@media (max-width: 926px) {
+}
+
+.days__line {
+  position: relative;
+  margin-left: 10px;
+  width: 123px;
+  height: 3px;
+  background: #00b61d;
+  @media (max-width: 768px) {
+    width: 50px;
+  }
+}
+.days__line::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #00b61d;
+  @media (max-width: 768px) {
+    width: 12px;
+    height: 12px;
+    top: -5px;
+  }
+}
+.days__icon {
+  max-width: 25px;
+  margin-right: 10px;
+  @media (max-width: 768px) {
+    max-width: 25px;
+    height: 25px;
+  }
+}
+.days__positions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 10px;
+  position: relative;
+  z-index: 2;
+  width: 500px;
+  background: #000;
+  background: #ff9700;
+  border-radius: 15px;
+  @media (max-width: 768px) {
+    padding: 10px 10px;
+    width: 270px;
+  }
+}
+.days__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: $white;
+  // display: block;
+  // position: relative;
+  // z-index: 2;
+  // width: 502px;
+  // background: #000;
+  // padding: 18px 5px;
+  // font-weight: 500;
+  // font-size: 20px;
+  // line-height: 24px;
+  // text-align: center;
+  // color: $white;
+  // background: #ff9700;
+  // border-radius: 15px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

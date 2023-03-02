@@ -1,0 +1,26 @@
+$containerWidth: 1166;
+$containerPadding: 20;
+
+// Color ==================================================
+
+$colorText: #29353e;
+$white: #fff;
+// $colorPrimary: ;
+// $colorBtn: ;
+
+// AdaptivValue ===========================================
+
+$maxContainerWidth: $containerWidth;
+
+@mixin adaptiv-value($property, $startSize, $minSize) {
+  $addSize: $startSize - $minSize;
+  #{$property}: $startSize + px;
+  @media (max-width: #{$maxContainerWidth + px}) {
+    #{$property}: calc(
+      #{$minSize + px} + #{$addSize} *
+        ((100vw - 320px) / #{$maxContainerWidth - 320})
+    );
+  }
+}
+
+// =======================================================

@@ -1,0 +1,171 @@
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 20;
+  transition: all 0.8s ease;
+
+  &__wrapper {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+  }
+
+  &__content {
+    display: flex;
+    position: relative;
+    max-width: 800px;
+    background: #e6f2f2;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+    transition: all 0.8s ease;
+    border-radius: 17px;
+  }
+
+  &__image {
+    img {
+      max-width: 100%;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    font-size: 20px;
+    color: #000;
+    transition: all 0.3s ease;
+    &:hover {
+      color: red;
+    }
+  }
+  &__area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: auto;
+  }
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .popup__content {
+  opacity: 1;
+  transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+}
+.anketa {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 27px 30px;
+
+  &__title {
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 45px;
+    color: $colorText;
+    text-align: center;
+    @media (max-width: 768px) {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+
+  &__list {
+    flex: 1 1 auto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: $colorText;
+    li {
+      margin-bottom: 20px;
+    }
+    li:last-child {
+      margin-bottom: 50px;
+    }
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+
+  &__input {
+    padding: 0 10px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    color: $colorText;
+    background: #e6f2f2;
+    border-bottom: 2px solid #29353e;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 18px 28px;
+    background: #00c6f7;
+    border-radius: 15px;
+    font-size: 22px;
+    color: $white;
+    transition: all 0.5s ease;
+    &:hover {
+      background: #d34a42;
+      color: #eaf2b2;
+    }
+    @media (max-width: 768px) {
+      font-size: 16px;
+      width: 250px;
+      height: 52px;
+    }
+  }
+}
+.anketa__input._error {
+  box-shadow: 0 0 20px red;
+}
+
+.anketa::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.8) url(../images/Dual.gif) center / 50px
+    no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s ease;
+}
+.anketa._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+.container__two.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

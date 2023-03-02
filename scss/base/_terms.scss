@@ -1,0 +1,41 @@
+.terms {
+  background: radial-gradient(
+        50% 2317.79% at 100% 50%,
+        #a8eae6 4.49%,
+        rgba(182, 235, 232, 0.807985) 22.83%,
+        rgba(242, 239, 239, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        71.1% 1780.59% at 11.59% 28.9%,
+        #a8eae6 0%,
+        rgba(242, 239, 239, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+    @media (max-width: 1000px) {
+      overflow-x: scroll;
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__text {
+    margin-top: 6px;
+    font-weight: 700;
+    text-align: center;
+    color: #29353e;
+    @include adaptiv-value("font-size", 24, 18);
+    @include adaptiv-value("line-height", 28, 20);
+  }
+}
